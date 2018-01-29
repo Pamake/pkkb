@@ -1,0 +1,63 @@
+{% extends "::layout/layout.html.twig" %}
+
+{% block principal %}
+    <section class="page-header">
+        <div class="container">
+
+            <h1>Mentions Légales</h1>
+
+            <!-- breadcrumbs -->
+            <ol class="breadcrumb">
+                <li><a href="{{ path('azimuth_homepage') }}">Accueil</a></li>
+
+                <li class="active">Mentions Légales</li>
+            </ol><!-- /breadcrumbs -->
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+
+            <div class="row">
+
+                <!-- LEFT -->
+                <div class="col-lg-3 col-md-3 col-sm-3 col-lg-pull-9 col-md-pull-9 col-sm-pull-9">
+                    <!-- HTML BLOCK -->
+                    <div class="margin-bottom-60">
+                        <h4>Termes et conditions</h4>
+                        <ul class="footer-links list-unstyled">
+
+                            {{ render(controller("PagesBundle:Pages:menu")) }}
+                        </ul>
+
+                    </div>
+                    <!-- /HTML BLOCK -->
+
+                    <!-- BANNER ROTATOR -->
+                    <div class="owl-carousel buttons-autohide controlls-over margin-bottom-60 text-center" data-plugin-options='{"singleItem": true, "autoPlay": 4000, "navigation": true, "pagination": false, "transitionStyle":"goDown"}'>
+                        <a href="transformation-affaires/gestion-des-changements.php">
+                            <img class="img-responsive" src="assets/images/banners/nouveaute2.jpg" width="270" height="350" alt="">
+                        </a>
+                        <a href="services-aux-communautes-autochtones.php">
+                            <img class="img-responsive" src="assets/images/banners/nouveaute1.jpg" width="270" height="350" alt="">
+                        </a>
+                    </div>
+                    <!-- /BANNER ROTATOR -->
+                </div>
+
+                <!-- RIGHT -->
+                <div class="col-lg-9 col-md-9 col-sm-9 col-lg-push-3 col-md-push-3 col-sm-push-3">
+
+                    <h3>AZIMUTH s’est dotée d’un code d’éthique et de bonne gouvernance dans ses pratiques d’affaires. </h3>
+
+
+                    {{ render(controller("PagesBundle:Pages:description")) }}
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- / -->
+{% endblock %}

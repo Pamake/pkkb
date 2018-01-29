@@ -1,0 +1,3 @@
+methodes_homepage:
+    path:     /methodes
+    defaults: { _controller: MethodesBundle:Default:index }

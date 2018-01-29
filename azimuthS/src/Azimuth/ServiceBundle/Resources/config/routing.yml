@@ -1,0 +1,39 @@
+service_homepage:
+    path:     /service
+    defaults: { _controller: ServiceBundle:Service:index }
+
+transformation_affaire:
+    path:     /service/transformation-affaire
+    defaults: { _controller: ServiceBundle:Service:transformationaffaire }
+
+strategie_organisationnelle:
+    path:     /service/strategie-organisationnelle
+    defaults: { _controller: ServiceBundle:Service:strategieorganisationnelle }
+
+service_international:
+    path:     /service/service-international
+    defaults: { _controller: ServiceBundle:Service:serviceinternational }
+
+service_financier:
+    path:     /service/service-financier
+    defaults: { _controller: ServiceBundle:Service:servicefinancier }
+
+service_communaute_autochtone:
+    path:     /service/service-communaute-autochtone
+    defaults: { _controller: ServiceBundle:Service:servicecommunauteautochtone }
+
+gestion_risque_certification:
+    path:     /service/gestion-risque-certification
+    defaults: { _controller: ServiceBundle:Service:gestionrisque }
+
+formation_professionnelle:
+    path:     /service/formation-professionnelle
+    defaults: { _controller: ServiceBundle:Service:formation }
+
+exploitation_organisationnelle:
+    path:     /service/exploitation-organisationnelle
+    defaults: { _controller: ServiceBundle:Service:exploitation }
+
+comptabilite_fiscalite:
+    path:     /service/comptabilite-fiscalite
+    defaults: { _controller: ServiceBundle:Service:comptabilite }

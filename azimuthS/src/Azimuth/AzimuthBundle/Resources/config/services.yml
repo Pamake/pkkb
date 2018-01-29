@@ -1,0 +1,77 @@
+services:
+#    azimuth.example:
+#        class: Azimuth\AzimuthBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
+
+# Fixtures services
+      Azimuth\AzimuthBundle\DataFixtures\ORM\PaysFixtures:
+         tags: [doctrine.fixture.orm]
+         
+# Fixtures services
+      Azimuth\AzimuthBundle\DataFixtures\ORM\VilleFixtures:
+         tags: [doctrine.fixture.orm]
+         
+# Fixtures services
+      Azimuth\AzimuthBundle\DataFixtures\ORM\AddressFixtures:
+         tags: [doctrine.fixture.orm]
+
+# Fixtures services
+      Azimuth\AzimuthBundle\DataFixtures\ORM\UtilisateursFixtures:
+         tags: [doctrine.fixture.orm]
+         
+# Fixtures services
+      Azimuth\AzimuthBundle\DataFixtures\ORM\RecruteurFixtures:
+         tags: [doctrine.fixture.orm]
+
+         
+# Fixtures services
+      Azimuth\AzimuthBundle\DataFixtures\ORM\PostulationFixtures:
+         tags: [doctrine.fixture.orm]
+         
+# Fixtures services
+      Azimuth\AzimuthBundle\DataFixtures\ORM\OffreEmploiFixtures:
+         tags: [doctrine.fixture.orm]
+
+# Fixtures services
+      Azimuth\AzimuthBundle\DataFixtures\ORM\LettreMotivationFixtures:
+         tags: [doctrine.fixture.orm]
+
+# Fixtures services
+      Azimuth\AzimuthBundle\DataFixtures\ORM\LangueFixtures:
+         tags: [doctrine.fixture.orm]
+         
+# Fixtures services
+      Azimuth\AzimuthBundle\DataFixtures\ORM\FormationFixtures:
+         tags: [doctrine.fixture.orm]
+         
+         
+# Fixtures services
+      Azimuth\AzimuthBundle\DataFixtures\ORM\ExperienceProfessionnelleFixtures:
+         tags: [doctrine.fixture.orm]
+
+# Fixtures services
+      Azimuth\AzimuthBundle\DataFixtures\ORM\CvFixtures:
+         tags: [doctrine.fixture.orm]
+
+         
+# Fixtures services
+      Azimuth\AzimuthBundle\DataFixtures\ORM\ConnaissancesInformatiquesFixtures:
+         tags: [doctrine.fixture.orm]
+         
+         
+# Fixtures services
+      Azimuth\AzimuthBundle\DataFixtures\ORM\ConnaissancesLinguistiquesFixtures:
+         tags: [doctrine.fixture.orm]
+
+         
+# Fixtures services
+      Azimuth\AzimuthBundle\DataFixtures\ORM\CandidatFixtures:
+         tags: [doctrine.fixture.orm]
+         
+# Fixtures services
+      Azimuth\AzimuthBundle\DataFixtures\ORM\RecruteurCvFixtures:
+         tags: [doctrine.fixture.orm]
+         
+# Fixtures services
+      Azimuth\AzimuthBundle\DataFixtures\ORM\CandidatOffreEmploiFixtures:
+         tags: [doctrine.fixture.orm]

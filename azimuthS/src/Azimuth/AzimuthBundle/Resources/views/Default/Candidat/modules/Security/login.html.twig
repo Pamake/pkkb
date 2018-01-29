@@ -1,0 +1,21 @@
+{% extends "@FOSUser/layout.html.twig" %}
+
+{% block fos_user_content %}
+
+    <section class="page-header page-header-xs">
+        <div class="container">
+
+            <h1>CONNEXION</h1>
+            <!-- breadcrumbs -->
+            <ol class="breadcrumb">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Pages</a></li>
+                <li class="active">Connexion</li>
+            </ol><!-- /breadcrumbs -->
+
+        </div>
+    </section>
+<div class="container">
+    {% include "@FOSUser/Security/login_content.html.twig" %}
+</div>
+{% endblock fos_user_content %}

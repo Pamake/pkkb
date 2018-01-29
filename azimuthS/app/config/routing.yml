@@ -1,0 +1,31 @@
+pages:
+    resource: "@PagesBundle/Resources/config/routing.yml"
+    prefix:   /
+
+utilisateurs:
+    resource: "@UtilisateursBundle/Resources/config/routing.yml"
+    prefix:   /
+
+methodes:
+    resource: "@MethodesBundle/Resources/config/routing.yml"
+    prefix:   /
+
+autochtones:
+    resource: "@AutochtonesBundle/Resources/config/routing.yml"
+    prefix:   /
+
+formations:
+    resource: "@FormationsBundle/Resources/config/routing.yml"
+    prefix:   /
+
+service:
+    resource: "@ServiceBundle/Resources/config/routing.yml"
+    prefix:   /
+
+gestion:
+    resource: "@GestionBundle/Resources/config/routing.yml"
+    prefix:   /
+
+azimuth:
+    resource: "@AzimuthBundle/Resources/config/routing.yml"
+    prefix:   /

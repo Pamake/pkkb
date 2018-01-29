@@ -1,0 +1,65 @@
+azimuth_homepage:
+    path:     /azimuth
+    defaults: { _controller: AzimuthBundle:Azimuths:index }
+
+equipe:
+    path:     /azimuth/equipe
+    defaults: { _controller: AzimuthBundle:Equipes:equipe }
+
+mission_vision:
+    path:     /azimuth/mission-vision
+    defaults: { _controller: AzimuthBundle:Missions:mission }
+
+responsabilite:
+    path:     /azimuth/responsabilite
+    defaults: { _controller: AzimuthBundle:Responsabilites:responsabilite }
+
+diversite_inclusion:
+    path:     /azimuth/deversite-inclusion
+    defaults: { _controller: AzimuthBundle:Diversites:diversite }
+
+carriere:
+    path:     /azimuth/carriere
+    defaults: { _controller: AzimuthBundle:Carrieres:emploi }
+
+
+categorieOffreEmploi:
+    path:     /offre-emploi/{categorie}
+    defaults: { _controller: AzimuthBundle:Carrieres:categorie }
+
+rechercheOffreEmploi:
+    path:     /recherche
+    defaults: { _controller: AzimuthBundle:Carrieres:rechercheTraitement }
+
+candidat:
+    path:     /candidat
+    defaults: { _controller: AzimuthBundle:Candidats:candidatInscription }
+
+candidatTraitement:
+    path:     /candidat/traitement
+    defaults: { _controller: AzimuthBundle:Candidats:candidatInscriptionTraitement }
+
+
+candidat_profile:
+    path:     /candidat/profile
+    defaults: { _controller: AzimuthBundle:Candidats:candidatProfile }
+
+candidat_profile_history:
+    path:     /candidat/profile/history
+    defaults: { _controller: AzimuthBundle:Candidats:candidatProfileHistory }
+
+candidat_profile_setting:
+    path:     /candidat/profile/setting
+    defaults: { _controller: AzimuthBundle:Candidats:candidatProfileSetting }
+
+candidat_profile_message:
+    path:     /candidat/profile/message
+    defaults: { _controller: AzimuthBundle:Candidats:candidatProfileMessage }
+
+candidat_profile_project:
+    path:     /candidat/profile/project
+    defaults: { _controller: AzimuthBundle:Candidats:candidatProfileProject }
+
+candidat_profile_comments:
+    path:     /candidat/profile/comment
+    defaults: { _controller: AzimuthBundle:Candidats:candidatProfileComment }

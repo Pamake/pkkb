@@ -1,0 +1,3 @@
+autochtones_homepage:
+    path:     /autochtones
+    defaults: { _controller: AutochtonesBundle:Default:index }

@@ -1,0 +1,116 @@
+<div class="container">
+
+    <!-- Mobile Menu Button -->
+    <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+        <i class="fa fa-bars"></i>
+    </button>
+
+    <!-- BUTTONS -->
+    <ul class="float-right nav nav-pills nav-second-main">
+
+        <!-- SEARCH -->
+        <li class="search">
+            <a href="javascript:;">
+                <i class="fa fa-search"></i>
+            </a>
+        </li>
+        <!-- /SEARCH -->
+
+
+    </ul>
+
+    <div class="navbar-collapse collapse float-left nav-main-collapse pl-0 pr-0">
+        <nav class="nav-main">
+
+            <ul id="topMain" class="nav nav-pills nav-main">
+                <li class="dropdown active"><!-- ACCUEIL -->
+                    <a class="dropdown-toggle" href="{{ path('azimuth_homepage') }}">
+                        ACCUEIL
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ path('mission_vision') }}">MISSION ET VISION</a></li>
+                        <li><a href="{{ path('equipe') }}">L'ÉQUIPE</a></li>
+                        <li><a href="{{ path('responsabilite') }}">RESPONSABILITÉ D'ENTREPRISE</a></li>
+                        <li><a href="{{ path('diversite_inclusion') }}">DIVERSITÉ ET INCLUSION</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown mega-menu"><!-- SERVICES -->
+                    <a class="dropdown-toggle" href="{{ path('service_homepage') }}">
+                        SERVICES
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="row">
+
+                                <div class="col-md-5th">
+                                    <ul class="list-unstyled">
+                                        <li><a href="{{ path('strategie_organisationnelle') }}">Stratégie organisationnelle</a></li>
+                                        <li><a href="{{ path('exploitation_organisationnelle') }}">Exploitation organisationnelle</a></li>
+                                        <li><a href="{{ path('transformation_affaire') }}">Transformation d’affaires </a></li>
+                                        <li><a href="{{ path('gestion_risque_certification') }}">Gestion des risques et certification</a></li>
+                                        <li><a href="{{ path('service_international') }}">Services à l'international </a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-5th">
+                                    <ul class="list-unstyled">
+                                        <li><a href="{{ path('service_financier') }}"> Services financiers</a></li>
+                                        <li><a href="{{ path('comptabilite_fiscalite') }}">Comptabilité et fiscalité</a></li>
+                                        <li><a href="{{ path('formation_professionnelle') }}"> Formations professionnelles</a></li>
+                                        <li><a href="{{ path('service_communaute_autochtone') }}"> Services aux communautés autochtones</a></li>
+
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown"><!-- GESTION PROJETS -->
+                    <a class="dropdown-toggle" href="#">
+                        GESTION DE PROJETS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="gestion-de-projets/bureau-de-gestion-de-projets.php">Bureau de gestion de projets</a></li>
+                        <li><a href="gestion-de-projets/gestion-de-portefeuille-de-projets.php">Gestion de portefeuille de projets</a></li>
+                        <li><a href="gestion-de-projets/gouvernance-de-projets.php">Gouvernance de projets</a></li>
+                        <li><a href="gestion-de-projets/implementation-pgi.php">Implémentation de Progiciels de Gestion Intégrés (PGI)</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><!-- SERVICES AUX COMMUNAUTÉS AUTOCHTONES -->
+                    <a class="dropdown-toggle" href="#">
+                        SERVICES AUX COMMUNAUTÉS AUTOCHTONES
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services-aux-communautes-autochtones/gouvernance.php">Gouvernance</a></li>
+                        <li><a href="services-aux-communautes-autochtones/planification.php">Planification</a></li>
+                        <li><a href="services-aux-communautes-autochtones/analyse-de-rentablite.php">Analyse de rentabilité</a></li>
+                        <li><a href="services-aux-communautes-autochtones/gestion-du-portefeuille.php">Gestion du portefeuille </a></li>
+                        <li><a href="services-aux-communautes-autochtones/gestion-du-rendement.php">Gestion du rendement</a></li>
+                        <li><a href="services-aux-communautes-autochtones/gestion-des-changements.php">Gestion des changements</a></li>
+                        <li><a href="services-aux-communautes-autochtones/services-fianciers-aux-communautes.php"> Services financiers aux communautés autochtones</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><!-- FORMATIONS -->
+                    <a  href="formations-professionnelles.php">
+                        FORMATIONS
+                    </a>
+                </li>
+                <li class="dropdown"><!-- MÉTHODES EMPLOYÉES -->
+                    <a href="methodes-employees.php">
+                        MÉTHODES EMPLOYÉES
+                    </a>
+                </li>
+                <li class="dropdown"><!-- EMPLOIS -->
+                    <a href="emplois.php">
+                        EMPLOIS
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+
+</div>

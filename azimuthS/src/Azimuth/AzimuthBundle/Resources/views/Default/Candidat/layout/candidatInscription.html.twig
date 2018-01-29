@@ -1,0 +1,48 @@
+{% extends "::layout/layout.html.twig" %}
+
+{% block principal %}
+    <section class="page-header page-header-xlg parallax parallax-3" style="background-image:url('demo_files/images/1200x800/18-min.jpg')">
+        <div class="overlay dark-8"><!-- dark overlay [1 to 9 opacity] --></div>
+
+        <div class="container">
+
+            <h1>S'INSCRIRE</h1>
+            <span class="font-lato fs-18 fw-300">Joindre notre equipe & Commencons a se développer ensemble.</span>
+
+            <!-- breadcrumbs -->
+            <ol class="breadcrumb">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Pages</a></li>
+                <li class="active">Inscription</li>
+            </ol><!-- /breadcrumbs -->
+
+        </div>
+    </section>
+    <!-- /PAGE HEADER -->
+
+
+
+    <!-- -->
+    <section>
+        <div class="container">
+
+            <div class="row">
+
+                <!-- LEFT -->
+                <div class="col-md-7 col-sm-7">
+
+                    <div class="heading-title heading-border-bottom">
+                        <h2 class="fs-20">INSCRIS TOI MAINTENANT POUR POSTULER!!1</h2>
+                    </div>
+
+                    {{ render(controller('AzimuthBundle:Candidats:candidat')) }}
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- / -->
+{% endblock %}

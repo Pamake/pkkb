@@ -1,0 +1,7 @@
+{% for page in pages %}
+
+   <li class="list-unstyled"> <a href="#"> {{ page.id }} . {{ page.titre }}</a></li>
+    <p>{{ page.content |raw }}</p>
+{% endfor %}
+
+<p> <strong> Mise à jour : 17 Janvier 2017</strong></p>

@@ -1,0 +1,250 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700,400italic);
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: Lora
+}
+
+header {
+ /** background-image: url(/azimuthDev/web/assets/images/Waves.jpg);
+  background-color: #EEE;
+  background-size: cover;
+  background-position: left 59%; 
+  height: 150px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 20px 20px 0*/
+}
+
+main {
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  padding: 20px
+}
+
+footer {
+  flex-shrink: 0;
+  flex-shrink: 0;
+  color: #FFF;
+  background-color: #333;
+  height: 50px
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  font-size: 0.7rem
+}
+
+footer li {
+  margin: 0 10px;
+}
+
+.conteneur-notice {
+  display: flex;
+  width: 100%;
+}
+
+.notice-media {
+  flex-grow: 1;
+  flex-shrink: 1;
+  border-right: 1px solid #AAA;
+  padding: 20px;
+}
+
+.barre-laterale {
+  max-width: 300px;
+  min-width: 200px;
+  
+}
+
+.elements-notice {
+  font-size: 0.9rem;
+  padding: 0 0 0 80px
+}
+
+.elements-notice tr:not(:last-of-type) {
+}
+
+.elements-notice td {
+  padding: 5px;
+}
+
+.elements-notice tr:not(:last-of-type) td {
+    border-bottom: 1px solid #CCC;
+}
+
+.elements-notice td:last-of-type {
+  text-align: justify;
+}
+
+.elements-notice .label {
+  color: #999;
+  font-style: italic;
+}
+
+.barre-laterale {
+  padding: 0 10px;
+}
+
+.widget {
+  font-size: 0.75rem
+}
+
+.widget:not(:last-of-type) {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #EEE;
+}
+
+.widget h2 {
+  font-size: 0.8rem;
+}
+
+.adresse {
+  margin: 0 0 1rem 0;
+}
+
+.horaires .jour,
+.adresse p {
+  margin: 0;
+}
+
+.widget .entete-widget {
+  font-size: 0.9rem;
+  color: #e5dcca;
+  background-color: #6899D7;
+  padding: 4px 0 4px 0.9rem;
+  font-weight: bold
+}
+
+.acquisition p {
+  margin: 0;
+}
+
+.acquisition .titre {
+  font-weight: bold;
+  color: blueviolet;
+}
+
+.acquisition .support {
+  font-style: italic;
+ 
+}
+.acquisition .support:before {
+  content: '[';
+}
+.acquisition .support:after {
+  content: ']';
+}
+
+.acquisition:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+.ariane {
+  background-color: #E1DCD0;
+  padding: 4px 20px 4px 10px;
+  box-shadow: 0 5px 15px 0px #CEC7B4;
+  font-size: 0.75rem;
+  margin: 0 8px;
+}
+
+.ariane .lien-fil {
+  text-decoration: none;
+  color: #1f588f;
+}
+
+.ariane .lien-fil:hover {
+  text-decoration: underline;
+  color: #1f588f;
+}
+
+.ariane .lien-fil:not(:last-of-type):after {
+  content: " > ";
+  color: #999;
+}
+
+.conteneur-form {
+  width: 100%;  
+  display: flex;
+}
+
+
+.conteneur-form .flex-colonne{
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0 2rem;
+}
+
+.conteneur-form label {
+  font-size: 0.8rem;
+  color: #333;  
+}
+
+.conteneur-form .element-form {
+  display: flex;
+  border-bottom: 1px solid #DDD;
+  padding: 0.5rem 0;
+}
+
+.conteneur-form .element-form > label {
+  width: 150px;
+}
+
+.element-form > *[id^="livre"] {
+  display: table-cell;
+  /*! width: calc(75% - 150px); */
+  /*! padding: 0.5rem; */
+  /*! border-bottom: 1px solid #DDD; */
+}
+
+.element-form #livre_cote {
+  display: flex;
+  align-content: space-between;
+  width: 100%;
+}
+
+.bouton-submit {
+  margin: 2rem 4rem;
+  background-color: #68A3CC;
+  color: #FFF;
+  font-size: 1rem;
+  padding: 4px;
+  border-radius: 16px;
+  border: 0;
+  box-shadow: 1px 3px 10px 2px #89AAD5;
+}
+
+.repeated > div {
+  margin: 0 20px;
+}
+
+.repeated label {
+  margin-right: 1rem;
+}
+
+.three-fold .repeated label {
+  display: block;
+}
+
+.repeated label:after {
+  content: " :";
+}
+
+.bouton-submit:hover {
+  background-color: #0B4872;
+}
+
+.element-form + ul,
+label + ul,
+main > ul:first-child{
+  list-style: none;
+  background-color: red;
+  color: white;
+  font-size: 0.75rem;
+  box-shadow: 3px 3px 4px 2px #999;
+  padding: 4px;
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="com.ibm.etools.aries.bundleWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1515429256060_0" label="Projets de bundle OSGi" name="Projets de bundle OSGi"/>
+<workingSet editPageId="com.ibm.etools.aries.fragmentBundleWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1515429256113_1" label="Projets de bundle de fragment OSGi" name="Projets de bundle de fragment OSGi"/>
+<workingSet editPageId="com.ibm.etools.aries.applicationWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1515429256122_2" label="Projets d&apos;application OSGi" name="Projets d&apos;application OSGi"/>
+<workingSet editPageId="com.ibm.etools.aries.compositeBundleWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1515429256129_3" label="Projets de bundle composite OSGi" name="Projets de bundle composite OSGi"/>
+<workingSet editPageId="com.ibm.etools.aries.subsystemWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1515429256135_4" label="Projets de fonction Liberty" name="Projets de fonction Liberty"/>
+<workingSet editPageId="com.ibm.etools.hybrid.ui.workingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1515429256143_5" label="Projets Cordova" name="WORKING_SET_NAME"/>
+<workingSet editPageId="com.ibm.etools.j2ee.ui.EARWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1515429256152_6" label="Projets EAR" name="EARWorkingSetPage.name"/>
+<workingSet editPageId="com.ibm.etools.j2ee.ui.AppClientWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1515429256163_7" label="Projets de client d&apos;application" name="AppClientWorkingSetPage.name"/>
+<workingSet editPageId="com.ibm.etools.j2ee.ui.EjbWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1515429256175_8" label="Projets EJB" name="EjbWorkingSetPage.name"/>
+<workingSet editPageId="com.ibm.etools.j2ee.ui.ConnectorWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1515429256188_9" label="Projets de connecteur" name="ConnectorWorkingSetPage.name"/>
+<workingSet editPageId="com.ibm.etools.j2ee.ui.WebWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1515429256201_10" label="Projets Web" name="NewWebWorkingSetPage.name"/>
+<workingSet editPageId="com.ibm.etools.j2ee.ui.JPAWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1515429256215_11" label="Projets JPA" name="JPAWorkingSet.name"/>
+<workingSet editPageId="com.ibm.etools.j2ee.ui.UtilWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1515429256232_12" label="Projets d&apos;utilitaire" name="WS_UTIL"/>
+<workingSet editPageId="com.ibm.etools.j2ee.ui.WebFragmentWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1515429256250_13" label="Projets de fragments Web" name="WebFragmentWorkingSetPage.name"/>
+<workingSet editPageId="com.ibm.etools.project.OthersWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1515429256268_14" label="Projets non catégorisés" name="OthersWorkingSet.name"/>
+<workingSet editPageId="com.ibm.etools.wcg.BatchWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1515429256299_15" label="Projets Modern Batch" name="WCG_WORKINGSET"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1515429256554_16" label="Plusieurs jeux de documents" name="Aggregate:Projets de bundle OSGi:Projets de bundle de fragment OSGi:Projets d&apos;application OSGi:Projets de bundle composite OSGi:Projets de fonction Liberty:WORKING_SET_NAME:EARWorkingSetPage.name:AppClientWorkingSetPage.name:EjbWorkingSetPage.name:ConnectorWorkingSetPage.name:NewWebWorkingSetPage.name:JPAWorkingSet.name:WS_UTIL:WebFragmentWorkingSetPage.name:OthersWorkingSet.name:WCG_WORKINGSET:">
+<workingSet IMemento.internal.id="Projets de bundle OSGi"/>
+<workingSet IMemento.internal.id="Projets de bundle de fragment OSGi"/>
+<workingSet IMemento.internal.id="Projets d&apos;application OSGi"/>
+<workingSet IMemento.internal.id="Projets de bundle composite OSGi"/>
+<workingSet IMemento.internal.id="Projets de fonction Liberty"/>
+<workingSet IMemento.internal.id="WORKING_SET_NAME"/>
+<workingSet IMemento.internal.id="EARWorkingSetPage.name"/>
+<workingSet IMemento.internal.id="AppClientWorkingSetPage.name"/>
+<workingSet IMemento.internal.id="EjbWorkingSetPage.name"/>
+<workingSet IMemento.internal.id="ConnectorWorkingSetPage.name"/>
+<workingSet IMemento.internal.id="NewWebWorkingSetPage.name"/>
+<workingSet IMemento.internal.id="JPAWorkingSet.name"/>
+<workingSet IMemento.internal.id="WS_UTIL"/>
+<workingSet IMemento.internal.id="WebFragmentWorkingSetPage.name"/>
+<workingSet IMemento.internal.id="OthersWorkingSet.name"/>
+<workingSet IMemento.internal.id="WCG_WORKINGSET"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1515429364221_17" label="Fenêtre Jeu de documents" name="Aggregate for window 1515429364221"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1515429527740_18" label="Fenêtre Jeu de documents" name="Aggregate for window 1515429527740"/>
+</workingSetManager>

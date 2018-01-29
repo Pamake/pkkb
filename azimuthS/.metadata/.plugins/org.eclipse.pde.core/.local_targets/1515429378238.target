@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?pde version="3.8"?><target name="Plateforme exécutée" sequenceNumber="4">
+<locations>
+<location path="${eclipse_home}" type="Profile"/>
+</locations>
+<environment>
+<os>win32</os>
+<ws>win32</ws>
+<arch>x86_64</arch>
+<nl>fr_CA</nl>
+</environment>
+<launcherArgs>
+<vmArgs>-Dsdp.driver=RADO911-I20141014_1328 -Xquickstart -Xms100m -Xmx1024m -Xmnx64m -Xgcpolicy:gencon -Xscmx96m -Xshareclasses:name=IBMSDP_%u -XX:MaxPermSize=512M -Xcompressedrefs -Dcom.ibm.ws.management.event.max_polling_interval=1000 -Dfile.encoding=UTF8</vmArgs>
+</launcherArgs>
+</target>

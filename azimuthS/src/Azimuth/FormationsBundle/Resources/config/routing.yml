@@ -1,0 +1,3 @@
+formations_homepage:
+    path:     /formations
+    defaults: { _controller: FormationsBundle:Default:index }

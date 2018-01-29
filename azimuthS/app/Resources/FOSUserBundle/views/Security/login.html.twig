@@ -1,0 +1,25 @@
+{% extends "@FOSUser/layout.html.twig" %}
+
+{% block fos_user_content %}
+
+    <section class="page-header page-header-xlg parallax parallax-3" style="background-image:url('demo_files/images/1200x800/18-min.jpg')">
+        <div class="overlay dark-8"><!-- dark overlay [1 to 9 opacity] --></div>
+
+        <div class="container">
+
+            <h1>CONNEXION</h1>
+            <span class="font-lato fs-18 fw-300">Join Our Team &amp; Start Growing</span>
+
+            <!-- breadcrumbs -->
+            <ol class="breadcrumb">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Features</a></li>
+                <li class="active">Connexion</li>
+            </ol><!-- /breadcrumbs -->
+
+        </div>
+    </section>
+<div class="container">
+    {% include "@FOSUser/Security/login_content.html.twig" %}
+</div>
+{% endblock fos_user_content %}

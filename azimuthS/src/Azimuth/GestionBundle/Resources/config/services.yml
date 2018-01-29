@@ -1,0 +1,4 @@
+services:
+#    gestion.example:
+#        class: Azimuth\GestionBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

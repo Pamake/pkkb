@@ -1,0 +1,207 @@
+{% extends "::layout/layout.html.twig" %}
+
+{% block principal %}
+    <section class="page-header page-header-xlg parallax parallax-3" style="background-image:url('demo_files/images/1200x800/18-min.jpg')">
+        <div class="overlay dark-8"><!-- dark overlay [1 to 9 opacity] --></div>
+
+        <div class="container">
+
+            <h1>CARRIÈRES</h1>
+            <span class="font-lato fs-18 fw-300">Join Our Team &amp; Start Growing</span>
+            {{ render(controller('AzimuthBundle:Carrieres:recherche')) }}
+
+            <!-- breadcrumbs -->
+            <ol class="breadcrumb">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Features</a></li>
+                <li class="active">Carrieres</li>
+            </ol><!-- /breadcrumbs -->
+
+        </div>
+    </section>
+    <!-- /PAGE HEADER -->
+
+
+
+
+    <!-- -->
+    <section>
+        <div class="container">
+
+            <div class="row">
+        {% if(emplois|length !=0) %}
+                <!-- LEFT -->
+                <div class="col-md-7 col-sm-7">
+
+                    {% for emploi in emplois %}
+
+                        <div class="heading-title heading-border-bottom heading-color">
+                            <span class="float-right text-muted">2 available</span>
+                            <h2 class="fs-20"><span>01.</span> {{ emploi.offreEmploiTitre }}</h2>
+                        </div>
+
+                        <div class="mb-80">
+                            <h5>Description du poste :</h5>
+                            <p> {{ emploi.offreEmploiDescriptionPoste }}</p>
+
+                            <h5>Fonctions et responsabilités :</h5>
+                            <ul class="list-unstyled list-icons">
+                                <li><i class="fa fa-check"></i> {{ emploi.offreEmploiQualitesRequises }} </li>
+                            </ul>
+
+                            <h5>Qualités requises pour réussir dans ce rôle :</h5>
+
+                            <h6>EXIGENCES MINIMALES </h6>
+                            <ul class="list-unstyled list-icons">
+                                <li><i class="fa fa-plus-square"></i> {{ emploi.offreEmploiConnaissancesTechniques }}</li>
+                            </ul>
+                            <h6>COMPÉTENCES  </h6>
+                            <ul class="list-unstyled list-icons">
+                                <li><i class="fa fa-plus-square"></i> {{ emploi.offreEmploiConnaissancesTechniques }}</li>
+                            </ul>
+
+                            <h5> Client : {{ emploi.recruteur.societeNom }}</h5>
+                            <ul class="list-unstyled list-icons">
+                                <li><i class="fa fa-plus-square"></i> Date de retrait : {{ emploi.offreEmploiEndDate |date("d/m/Y") }}</li>
+                                <li><i class="fa fa-plus-square"></i> Horaire : {{ emploi.offreEmploiHoraire }}</li>
+                                <li><i class="fa fa-plus-square"></i> Statut : {{ emploi.offreEmploiStatut }}</li>
+                                <li><i class="fa fa-plus-square"></i> Offre d'emploi publiée le : {{ emploi.offreEmploiCreateDate |date("d/m/Y") }}</li>
+                                <li><i class="fa fa-plus-square"></i> Domaine d'emploi : {{ emploi.offreEmploiDomaine }}</li>
+                                <li><i class="fa fa-plus-square"></i> Lieu de travail : {{ emploi.offreEmploiRegion }}</li>
+                                <li><i class="fa fa-plus-square"></i> Numéro du poste :{{ emploi.offreEmploiReference }}</li>
+                            </ul>
+
+                            <a href="#careers_apply" class="btn btn-3d btn-teal scrollTo" data-offset="150"><i class="fa fa-check"></i> APPLY NOW</a>
+                        </div>
+
+                    {% endfor %}
+
+                </div>
+
+                <!-- RIGHT - FORM -->
+                <div class="col-md-5 col-sm-5">
+
+                    <div class="heading-title heading-border-bottom">
+                        <h2 class="fs-20">APPLY NOW</h2>
+                    </div>
+
+
+                    <form class="validate" id="careers_apply" action="php/contact.php" method="post" enctype="multipart/form-data" data-success="Sent! Thank you!" data-toastr-position="top-right">
+                        <fieldset>
+                            <!-- required [php action request] -->
+                            <input type="hidden" name="action" value="contact_send" />
+
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <label>First Name *</label>
+                                    <input type="text" name="contact[first_name]" value="" class="form-control required">
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <label>Last Name *</label>
+                                    <input type="text" name="contact[last_name]" value="" class="form-control required">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <label>Email *</label>
+                                    <input type="email" name="contact[email]" value="" class="form-control required">
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <label>Phone *</label>
+                                    <input type="text" name="contact[phone]" value="" class="form-control required">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <label>Position *</label>
+                                    <select name="contact[position]" class="form-control pointer required">
+                                        <option value="">--- Select ---</option>
+                                        <option value="Marketing">PR &amp; Marketing</option>
+                                        <option value="Developer">Web Developer</option>
+                                        <option value="php">PHP Programmer</option>
+                                        <option value="Javascript">Javascript Programmer</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <label>Expected Salary *</label>
+                                    <input type="text" name="contact[expected_salary]" value="" class="form-control required">
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <label>Start Date *</label>
+                                    <input type="text" name="contact[start_date]" value="" class="form-control datepicker required" data-format="yyyy-mm-dd" data-lang="en" data-RTL="false">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <label>Experience *</label>
+                                    <textarea name="contact[experience]" rows="4" class="form-control required"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <label>
+                                        Website
+                                        <small class="text-muted">- optional</small>
+                                    </label>
+                                    <input type="text" name="contact[website]" placeholder="http://" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label>
+                                        File Attachment
+                                        <small class="text-muted">Curriculum Vitae - optional</small>
+                                    </label>
+
+                                    <!-- custom file upload -->
+                                    <div class="fancy-file-upload fancy-file-primary">
+                                        <i class="fa fa-upload"></i>
+                                        <input type="file" class="form-control" name="contact[attachment]" onchange="jQuery(this).next('input').val(this.value);" />
+                                        <input type="text" class="form-control" placeholder="no file selected" readonly="" />
+                                        <span class="button">Choose File</span>
+                                    </div>
+                                    <small class="text-muted block">Max file size: 10Mb (zip/pdf/jpg/png)</small>
+
+                                </div>
+                            </div>
+
+                        </fieldset>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-3d btn-teal btn-xlg btn-block mt-30">
+                                    SEND APPLICATION
+                                    <span class="block font-lato">We'll get back to you within 48 hours</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <hr class="mt-60" />
+
+                    <div class="text-center mt-60">
+                        <i class="fa fa-phone fa-3x"></i>
+                        <h1 class="font-raleway m-0">1800-123-456</h1>
+                        <span class="fs-13 text-muted">FEEL FREE TO CALL US</span>
+                    </div>
+
+                </div>
+
+            </div>
+        {% else %}
+           Aucune offre d'emploi ne correspond.
+        {% endif %}
+
+        </div>
+    </section>
+    <!-- / -->
+{% endblock %}

@@ -1,0 +1,107 @@
+{% extends "::layout/layout.html.twig" %}
+
+{% block principal %}
+    <section class="page-header">
+        <div class="container">
+
+            <h1>Transformation d’affaires</h1>
+
+            <!-- breadcrumbs -->
+            <ol class="breadcrumb">
+                <li><a href="{{ path('azimuth_homepage') }}">Accueil</a></li>
+                <li><a href="{{ path('service_homepage') }}">Services</a></li>
+
+                <li class="active">Transformation d’affaires</li>
+            </ol><!-- /breadcrumbs -->
+
+        </div>
+    </section>
+    <!-- /PAGE HEADER -->
+
+
+
+
+    <!-- -->
+    <section>
+        <div class="container">
+
+            <div class="row">
+
+                <!-- LEFT -->
+                <div class="col-lg-3 col-md-3 col-sm-3 col-lg-pull-9 col-md-pull-9 col-sm-pull-9">
+                    <!-- HTML BLOCK -->
+                    <div class="margin-bottom-60">
+                        <h4>SERVICES –   Transformation d’affaires</h4>
+                        <ul class="footer-links list-unstyled">
+                            <!-- <li class="list-group-item"><a href="transformation-affaires/gouvernance.php">Gouvernance</a></li>-->
+                            <li class="list-group-item"><a href="transformation-affaires/planification.php">Planification</a></li>
+                            <li class="list-group-item"><a href="transformation-affaires/analyse-de-rentablite.php">Analyse de rentabilité</a></li>
+                            <li class="list-group-item"><a href="transformation-affaires/gestion-du-portefeuille.php">Gestion du portefeuille </a></li>
+                            <li class="list-group-item"><a href="transformation-affaires/gestion-du-rendement.php">Gestion du rendement</a></li>
+                            <li class="list-group-item"><a href="transformation-affaires/architecture-operationnelele.php">Architecture opérationnelle </a></li>
+                            <li class="list-group-item"><a href="transformation-affaires/evaluation-de-programme.php">Évalution de programme</a></li>
+                            <li class="list-group-item"><a href="transformation-affaires/gestion-de-projet.php">Gestion de projet</a></li>
+                            <li class="list-group-item"><a href="transformation-affaires/gestion-des-changements.php">Gestion des changements</a></li>
+                            <li class="list-group-item"><a href="transformation-affaires/gestion-des-risques-d-entreprise.php">Gestion des risques d'entreprise</a></li>
+                            <li class="list-group-item"><a href="transformation-affaires/gestion-de-technologie.php">Gestion de la technologie</a></li>
+
+
+
+                        </ul>
+
+                    </div>
+                    <!-- /HTML BLOCK -->
+
+                    <!-- BANNER ROTATOR -->
+                    <div class="owl-carousel buttons-autohide controlls-over margin-bottom-60 text-center" data-plugin-options='{"singleItem": true, "autoPlay": 4000, "navigation": true, "pagination": false, "transitionStyle":"goDown"}'>
+                        <a href="transformation-affaires/gestion-des-changements.php">
+                            <img class="img-responsive" src="assets/images/banners/nouveaute2.jpg" width="270" height="350" alt="">
+                        </a>
+                        <a href="services-aux-communautes-autochtones.php">
+                            <img class="img-responsive" src="assets/images/banners/nouveaute1.jpg" width="270" height="350" alt="">
+                        </a>							</div>
+                    <!-- /BANNER ROTATOR -->
+
+                </div>
+
+                <!-- RIGHT -->
+                <div class="col-lg-9 col-md-9 col-sm-9 col-lg-push-3 col-md-push-3 col-sm-push-3">
+
+                    <h3>AZIMUTH apporte une gamme de compétences qui permet de comprendre tous les aspects de la transformation. </h3>
+
+
+                    <img class="pull-right" src="{{ asset('assets/images/services/transformation.png') }}"  alt="stratégie organisationnelle" />
+                    <p>
+
+                        Nous vous aiderons à comprendre les enjeux liés au changement opérationnel requis  lors d’une Transformation d’affaires d’envergure. Nos experts ont l'expérience nécessaire en gestion
+                        du changement et ils peuvent adapter la transformation d’affaires ainsi que la gestion du changement à l’unicité de votre culture organisationnelle.
+                    <ul class="list-unstyled list-icons">
+
+                        <!--<li><a href="transformation-affaires/gouvernance.php"><i class="fa fa-check text-success"></i> Gouvernance</a></li>-->
+                        <li><a href="transformation-affaires/planification.php"><i class="fa fa-check text-success"></i> Planification</a></li>
+                        <li><a href="transformation-affaires/analyse-de-rentablite.php"><i class="fa fa-check text-success"></i> Analyse de la rentabilité</a></li>
+                        <li><a href="transformation-affaires/gestion-du-portefeuille.php"><i class="fa fa-check text-success"></i> Gestion du portefeuille</a></li>
+                        <li><a href="transformation-affaires/gestion-du-rendement.php"><i class="fa fa-check text-success"></i> Gestion du rendement</a></li>
+                        <li><a href="transformation-affaires/architecture-operationnelele.php"><i class="fa fa-check text-success"></i> Architecture opérationnelle</a></li>
+                        <li><a href="transformation-affaires/evaluation-de-programme.php"><i class="fa fa-check text-success"></i> Évaluation de programme</a></li>
+                        <li><a href="transformation-affaires/gestion-de-projets.php"><i class="fa fa-check text-success"></i> Gestion de projets</a></li>
+                        <li><a href="transformation-affaires/gestion-des-changements.php"><i class="fa fa-check text-success"></i> Gestion des changements</a></li>
+                        <li><a href="transformation-affaires/gestion-des-risques-d-entreprise.php"><i class="fa fa-check text-success"></i> Gestion des risques d'entreprise</a></li>
+                        <li><a href="transformation-affaires/gestion-de-technologie.php"><i class="fa fa-check text-success"></i> Gestion de la technologie</a></li>
+
+
+
+                    </ul>
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- / -->
+
+{% endblock %}

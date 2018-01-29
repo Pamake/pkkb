@@ -1,0 +1,12 @@
+services:
+#    azimuth.example:
+#        class: Azimuth\AzimuthBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
+
+# Fixtures services
+      Azimuth\PagesBundle\DataFixtures\ORM\PagesFixtures:
+         tags: [doctrine.fixture.orm]
+
+# Fixtures services
+      Azimuth\PagesBundle\DataFixtures\ORM\CategoriesFixtures:
+         tags: [doctrine.fixture.orm]

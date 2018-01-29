@@ -1,0 +1,76 @@
+{% extends "::layout/layout.html.twig" %}
+
+{% block principal %}
+
+    <section>
+        <div class="container">
+
+            <div class="row">
+
+                <!-- LEFT -->
+                <div class="col-sm-9">
+
+                    <div class="owl-carousel">
+
+                        <a href="#">
+                            <img class="img-fluid" src="{{ asset('assets/images/azimuth/1-min.jpg')}}" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="img-fluid" src="{{ asset('assets/images/azimuth/2-min.jpg')}}" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="img-fluid" src="{{ asset('assets/images/azimuth/3-min.jpg')}}" alt="">
+                        </a>
+                    </div>
+
+                    <!-- first row article summary -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Bienvenue sur le site d'AZIMUTH Management Consultants.</h4>
+                            <p>
+                                Chez AZIMUTH , nous croyons en un travail de grande qualité.
+                                C'est notre travail qui parle pour nous… et non notre représentant des ventes.
+                                Nous ne transigeons pas sur la qualité et nous nous efforçons de constamment dépasser les attentes
+                                de nos clients. Notre objectif est clair et invariable : devenir le conseiller d'affaires
+                                de confiance de nos clients afin d'entretenir une relation d'affaires longue et fructueuse.
+                                Comme consultants en gestion, nous vous proposons un large éventail de services professionnels
+                                et d'expertise technique. Notre proposition de valeur : ajouter de la plus-value dans
+                                tout ce que nous faisons. Nous sommes des PMP, des CPA-CMA, CISA, praticiens PRINCE2,
+                                des spécialistes de TOGAF 9, des formateurs professionnels, des praticiens certifiés
+                                agile et des chargés de projets certifiés SAP. Nous sommes des professionnels de la gestion financière,
+                                de la comptabilité, de la modélisation des processus d'affaires en plus de connaître à fond
+                                les méthodologies PMBOK, BABOK, PRINCE2, COBIT 4.1 et 5.0, ASAP 7.X, Agile, Lean, Scrum,
+                                XP et bien plus encore.
+                            </p>
+                            <h4>Notre devise est l'Excellence. Toujours.</h4>
+                            <h4>Aucun compromis n'est possible à ce niveau.</h4>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /LEFT -->
+
+                <!-- RIGHT -->
+                <div class="col-sm-3">
+
+                    <!-- HOT -->
+                    <h3 class="page-header mt-0 fw-300">
+                        <span>Nouveautés</span>
+                    </h3>
+
+                    <!-- video -->
+                    <div class="embed-responsive embed-responsive-16by9 mt-30">
+                        <iframe class="embed-responsive-item" src="http://player.vimeo.com/video/8408210" width="800" height="450"></iframe>
+                    </div>
+
+                    <!-- /video -->
+
+                </div>
+                <!-- /RIGHT -->
+
+            </div>
+
+        </div>
+    </section>
+    <!-- / -->
+{% endblock %}

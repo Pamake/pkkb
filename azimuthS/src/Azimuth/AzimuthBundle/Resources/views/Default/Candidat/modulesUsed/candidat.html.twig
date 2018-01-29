@@ -1,0 +1,96 @@
+<form action="{{ path('candidatTraitement') }}" method="POST" >
+
+    {{ form_start(form) }}
+
+    <div class="row">
+        <div class="col-md-6 col-sm-6">
+            {{ form_label(form.Nom) }}
+            {{ form_widget(form.Nom) }}
+        </div>
+        <div class="col-md-6 col-sm-6">
+            {{ form_label(form.Prenom) }}
+            {{ form_widget(form.Prenom) }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6">
+            {{ form_label(form.Email) }}
+            {{ form_widget(form.Email) }}
+        </div>
+        <div class="col-md-6 col-sm-6">
+            {{ form_label(form.Diplome) }}
+            {{ form_widget(form.Diplome) }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6">
+            {{ form_label(form.Datenaissance) }}
+            {{ form_widget(form.Datenaissance) }}
+        </div>
+        <div class="col-md-6 col-sm-6">
+            {{ form_label(form.Cote) }}
+            {{ form_widget(form.Cote) }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6">
+            {{ form_label(form.TelephoneMaison) }}
+            {{ form_widget(form.TelephoneMaison) }}
+        </div>
+        <div class="col-md-6 col-sm-6">
+            {{ form_label(form.TelephoneMobile) }}
+            {{ form_widget(form.TelephoneMobile) }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6">
+            {{ form_label(form.Address.address) }}
+            {{ form_widget(form.Address.address) }}
+        </div>
+        <div class="col-md-6 col-sm-6">
+            {{ form_label(form.Address.address2) }}
+            {{ form_widget(form.Address.address2) }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6">
+            {{ form_label(form.Address.district) }}
+            {{ form_widget(form.Address.district) }}
+        </div>
+        <div class="col-md-6 col-sm-6">
+            {{ form_label(form.Titre) }}
+            {{ form_widget(form.Titre) }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6">
+            {{ form_label(form.Address.postalCode) }}
+            {{ form_widget(form.Address.postalCode) }}
+        </div>
+        <div class="col-md-6 col-sm-6">
+            {{ form_label(form.Address.phone) }}
+            {{ form_widget(form.Address.phone) }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6">
+            {{ form_label(form.Address.ville.nomVille) }}
+            {{ form_widget(form.Address.ville.nomVille) }}
+        </div>
+        <div class="col-md-6 col-sm-6">
+            {{ form_label(form.Address.ville.pays.nomPays) }}
+            {{ form_widget(form.Address.ville.pays.nomPays) }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6">
+            {{ form_label(form.submit) }}
+            {{ form_widget(form.submit) }}
+            {{ form_label(form.cancel) }}
+            {{ form_widget(form.cancel) }}
+        </div>
+    </div>
+
+    {{ form_end(form) }}
+
+</form>

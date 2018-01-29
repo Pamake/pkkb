@@ -1,0 +1,43 @@
+
+    {% for emploi in emplois %}
+
+        <div class="heading-title heading-border-bottom heading-color">
+            <span class="float-right text-muted">2 available</span>
+            <h2 class="fs-20"><span>01.</span> {{ emploi.offreEmploiTitre }}</h2>
+        </div>
+
+        <div class="mb-80">
+            <h5>Description du poste :</h5>
+            <p> {{ emploi.offreEmploiDescriptionPoste }}</p>
+
+            <h5>Fonctions et responsabilités :</h5>
+            <ul class="list-unstyled list-icons">
+                <li><i class="fa fa-check"></i> {{ emploi.offreEmploiQualitesRequises }} </li>
+            </ul>
+
+            <h5>Qualités requises pour réussir dans ce rôle :</h5>
+
+            <h6>EXIGENCES MINIMALES </h6>
+            <ul class="list-unstyled list-icons">
+                <li><i class="fa fa-plus-square"></i> {{ emploi.offreEmploiConnaissancesTechniques }}</li>
+            </ul>
+            <h6>COMPÉTENCES  </h6>
+            <ul class="list-unstyled list-icons">
+                <li><i class="fa fa-plus-square"></i> {{ emploi.offreEmploiConnaissancesTechniques }}</li>
+            </ul>
+
+             <h5> Client : {{ emploi.recruteur.societeNom }}</h5>
+            <ul class="list-unstyled list-icons">
+                <li><i class="fa fa-plus-square"></i> Date de retrait : {{ emploi.offreEmploiEndDate |date("d/m/Y") }}</li>
+                <li><i class="fa fa-plus-square"></i> Horaire : {{ emploi.offreEmploiHoraire }}</li>
+                <li><i class="fa fa-plus-square"></i> Statut : {{ emploi.offreEmploiStatut }}</li>
+                <li><i class="fa fa-plus-square"></i> Offre d'emploi publiée le : {{ emploi.offreEmploiCreateDate |date("d/m/Y") }}</li>
+                <li><i class="fa fa-plus-square"></i> Domaine d'emploi : {{ emploi.offreEmploiDomaine }}</li>
+                <li><i class="fa fa-plus-square"></i> Lieu de travail : {{ emploi.offreEmploiRegion }}</li>
+                <li><i class="fa fa-plus-square"></i> Numéro du poste :{{ emploi.offreEmploiReference }}</li>
+            </ul>
+
+            <a href="#careers_apply" class="btn btn-3d btn-teal scrollTo" data-offset="150"><i class="fa fa-check"></i> APPLY NOW</a>
+        </div>
+
+    {% endfor %}
