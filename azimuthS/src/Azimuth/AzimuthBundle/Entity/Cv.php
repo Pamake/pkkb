@@ -28,6 +28,11 @@ class Cv
      */
     private $dateCreationCv;
 
+    public function __construct()
+    {
+        $this->dateCreationCv = new  \DateTime('now');
+    }
+
     /**
      * @var string
      *

@@ -4,12 +4,9 @@ namespace Azimuth\AzimuthBundle\Form;
 
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
-use Symfony\Component\Form\Extension\Core\Type\DateType;
-use Symfony\Component\Form\Extension\Core\Type\EmailType;
-use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 
 
 class VilleType extends AbstractType
@@ -19,6 +16,10 @@ class VilleType extends AbstractType
         $builder
             ->add('nomVille', TextType::class,array(
                 'label' => 'nom de ville'))
+            ->add('pays', EntityType::class,array('label' => 'Pays',
+                'class' => 'Azimuth\AzimuthBundle\Entity\Pays',
+                'choice_label' => 'paysNom',
+                'placeholder' => '--Veuillez Selectionner--'))
             ->add('pays', PaysType::class);
         // ->add('Utilisateur', EntityType::class)
         // ->add('Langue', EntityType::class)
@@ -26,13 +27,15 @@ class VilleType extends AbstractType
 
     }
 
+
+
     /**
-     * @param OptionsResolverInterface $resolver
+     * @param OptionsResolver $resolver
      */
-    public function setDefaultOptions(OptionsResolverInterface $resolver)
+    public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => ' Azimuth\AzimuthBundle\Entity\Ville'
+            'data_class' => 'Azimuth\AzimuthBundle\Entity\Ville'
         ));
     }
 

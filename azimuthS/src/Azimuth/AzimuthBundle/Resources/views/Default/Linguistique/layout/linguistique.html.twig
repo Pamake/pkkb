@@ -1,0 +1,17 @@
+{% extends "::layout/layout.html.twig" %}
+
+{% block principal %}
+    <section class="page-header">
+        <div class="container">
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+            <div>
+                <input type="submit" value=" Enregister" />
+            </div>
+            {{ form_end(form) }}
+
+
+        </div>
+    </section>
+    <!-- / -->
+{% endblock %}

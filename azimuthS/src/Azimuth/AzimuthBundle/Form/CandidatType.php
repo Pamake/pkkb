@@ -6,12 +6,11 @@ use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\BirthdayType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
-use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
-use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\Email;
 use Symfony\Component\Validator\Constraints\NotBlank;
 
@@ -49,13 +48,10 @@ class CandidatType extends AbstractType
                     new Email(array("message" => "Your email doesn't seems to be valid")),
                 )
             ))
-            ->add('Diplome', TextType::class, array(
-                'label' => 'Diplome le plus haut obtenu',
-                'attr' => array('placeholder' => 'Your name'),
-                'constraints' => array(
-                    new NotBlank(array("message" => "Please provide your name")),
-                )
-            ))
+            ->add('Diplome', EntityType::class,array('label' => 'Diplome le plus haut obtenu',
+                'class' => 'Azimuth\AzimuthBundle\Entity\NiveauScolarite',
+                'choice_label' => 'nomDiplome',
+                'placeholder' => '--Veuillez Selectionner--'))
             ->add('Cote',ChoiceType::class, array(
                 'label' => ' cote de securite',
                 'choices' => array(
@@ -75,7 +71,10 @@ class CandidatType extends AbstractType
             ->add('TelephoneMobile', TextType::class, array(
                 'label' => 'Mobile'))
            // ->add('Utilisateur', EntityType::class)
-           // ->add('Langue', EntityType::class)
+           ->add('Langue', EntityType::class,array('label' => 'Langue correpondance',
+                                                               'class' => 'Azimuth\AzimuthBundle\Entity\Langue',
+                                                               'choice_label' => 'langueName',
+                                                               'placeholder' => '--Veuillez Selectionner--'))
            ->add('Address', AddressType::class,array(
                'label' => 'Addresse Postal'))
             ->add('submit', SubmitType::class, array(
@@ -85,6 +84,18 @@ class CandidatType extends AbstractType
         'label' => 'Cancel',
         'attr' => array('class' => 'btn btn-default')));
 
+    }
+
+
+
+    /**
+     * @param OptionsResolver $resolver
+     */
+    public function configureOptions(OptionsResolver $resolver)
+    {
+        $resolver->setDefaults(array(
+            'data_class' => 'Azimuth\AzimuthBundle\Entity\Candidat'
+        ));
     }
 
     public function getName()

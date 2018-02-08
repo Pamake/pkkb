@@ -22,7 +22,6 @@ carriere:
     path:     /azimuth/carriere
     defaults: { _controller: AzimuthBundle:Carrieres:emploi }
 
-
 categorieOffreEmploi:
     path:     /offre-emploi/{categorie}
     defaults: { _controller: AzimuthBundle:Carrieres:categorie }
@@ -38,7 +37,6 @@ candidat:
 candidatTraitement:
     path:     /candidat/traitement
     defaults: { _controller: AzimuthBundle:Candidats:candidatInscriptionTraitement }
-
 
 candidat_profile:
     path:     /candidat/profile
@@ -63,3 +61,19 @@ candidat_profile_project:
 candidat_profile_comments:
     path:     /candidat/profile/comment
     defaults: { _controller: AzimuthBundle:Candidats:candidatProfileComment }
+
+candidat_statut:
+    path:     /azimuth/statut/add
+    defaults: { _controller: AzimuthBundle:Statuts:add }
+
+candidat_connaissance_linguistique:
+    path:     /azimuth/connaissance-linguistique/add
+    defaults: { _controller: AzimuthBundle:ConnaissanceLinguistiques:add }
+
+document_upload:
+    path:     /azimuth/document/add
+    defaults: { _controller: AzimuthBundle:Document:add }
+
+app_product_new:
+    path:     /product/new
+    defaults: { _controller: AzimuthBundle:Product:new }

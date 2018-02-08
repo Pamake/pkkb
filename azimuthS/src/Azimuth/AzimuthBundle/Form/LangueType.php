@@ -11,12 +11,21 @@ class LangueType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('recherche',TextType::class, array('label' => false,
-            'attr' => array('class' => 'input-medium search-query')));
+        $builder->add('langueName',TextType::class, array('label' => 'Langue'));
+    }
+
+    /**
+     * @param OptionsResolver $resolver
+     */
+    public function configureOptions(OptionsResolver $resolver)
+    {
+        $resolver->setDefaults(array(
+            'data_class' => 'Azimuth\AzimuthBundle\Entity\Langue'
+        ));
     }
 
     public function getName()
     {
-        return 'Azimuth_AzimuthBundle_recherche';
+        return 'Azimuth_AzimuthBundle_langue';
     }
 }

@@ -100,6 +100,12 @@ class Candidat
      */
     private $candidatCreateDate;
 
+
+    public function __construct()
+    {
+        $this->candidatCreateDate = new  \DateTime('now');
+    }
+
     /**
      * @var \DateTime
      *

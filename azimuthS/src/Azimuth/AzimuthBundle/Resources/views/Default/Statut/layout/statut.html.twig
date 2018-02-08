@@ -1,0 +1,35 @@
+{% extends "::layout/layout.html.twig" %}
+
+{% block principal %}
+    <section class="page-header">
+        <div class="container">
+
+            <h1>L'équipe</h1>
+
+            <!-- breadcrumbs -->
+            <ol class="breadcrumb">
+                <li><a href="{{ path('azimuth_homepage') }}">Accueil</a></li>
+
+                <li class="active">L'équipe de direction </li>
+            </ol><!-- /breadcrumbs -->
+
+        </div>
+    </section>
+    <!-- -->
+    <section>
+        <div class="container">
+
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+            <div>
+                <input type="submit" value=" Enregister" />
+            </div>
+            {{ form_end(form) }}
+
+
+        </div>
+
+        </div>
+    </section>
+    <!-- / -->
+{% endblock %}
