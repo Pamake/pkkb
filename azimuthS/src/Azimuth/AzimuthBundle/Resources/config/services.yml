@@ -75,3 +75,23 @@ services:
 # Fixtures services
       Azimuth\AzimuthBundle\DataFixtures\ORM\CandidatOffreEmploiFixtures:
          tags: [doctrine.fixture.orm]
+
+# Fixtures services
+      Azimuth\AzimuthBundle\DataFixtures\ORM\TypeEmploiFixtures:
+         tags: [doctrine.fixture.orm]
+
+# Fixtures services
+      Azimuth\AzimuthBundle\DataFixtures\ORM\NiveauLinguistiquesFixtures:
+         tags: [doctrine.fixture.orm]
+
+# Fixtures services
+      Azimuth\AzimuthBundle\DataFixtures\ORM\StatutFixtures:
+         tags: [doctrine.fixture.orm]
+
+# Fixtures services
+      Azimuth\AzimuthBundle\DataFixtures\ORM\NiveauScolariteFixtures:
+         tags: [doctrine.fixture.orm]
+
+# Fixtures services
+      Azimuth\AzimuthBundle\DataFixtures\ORM\EquiteFixtures:
+         tags: [doctrine.fixture.orm]

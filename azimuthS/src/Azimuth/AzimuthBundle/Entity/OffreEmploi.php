@@ -28,6 +28,11 @@ class OffreEmploi
      */
     private $offreEmploiCreateDate;
 
+    public function __construct()
+    {
+        $this->offreEmploiCreateDate = new  \DateTime('now');
+    }
+
     /**
      * @var \DateTime
      *

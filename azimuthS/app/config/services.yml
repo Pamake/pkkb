@@ -3,7 +3,17 @@
 parameters:
 #    parameter_name: value
 
-services:
-#    service_name:
-#        class: AppBundle\Directory\ClassName
-#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+
+    Azimuth\AzimuthBundle\Service\FileUploader:
+        arguments:
+           $targetDir: '%brochures_directory%'
+
+    _defaults:
+        # ... be sure autowiring is enabled
+        autowire: true
+    # ...
+
+    Azimuth\AzimuthBundle\EventListener\BrochureUploadListener:
+        tags:
+            - { name: doctrine.event_listener, event: prePersist }
+            - { name: doctrine.event_listener, event: preUpdate }

@@ -10,7 +10,6 @@ use Azimuth\AzimuthBundle\Entity\Langue;
 use Azimuth\AzimuthBundle\Form\MessagesType;
 use Azimuth\UtilisateursBundle\Entity\Utilisateurs;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 
 use Azimuth\AzimuthBundle\Form\CandidatType;
 use Symfony\Component\HttpFoundation\Request;

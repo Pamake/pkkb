@@ -28,16 +28,10 @@ class ConnaissancesLinguistiques
      */
     private $langueNom;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="langueNiveau", type="string", length=25, nullable=true)
-     */
-    private $langueNiveau;
 
     /**
      * @var \Azimuth\AzimuthBundle\Entity\NiveauLinguistique
-     * @ORM\ManyToOne(targetEntity="Azimuth\AzimuthBundle\Entity\Niveau")
+     * @ORM\ManyToOne(targetEntity="Azimuth\AzimuthBundle\Entity\NiveauLinguistique")
      *
      * @ORM\JoinColumn(nullable=false)
      */
@@ -45,7 +39,7 @@ class ConnaissancesLinguistiques
 
     /**
      * @var \Azimuth\AzimuthBundle\Entity\NiveauLinguistique
-     * @ORM\ManyToOne(targetEntity="Azimuth\AzimuthBundle\Entity\Niveau")
+     * @ORM\ManyToOne(targetEntity="Azimuth\AzimuthBundle\Entity\NiveauLinguistique")
      *
      * @ORM\JoinColumn(nullable=false)
      */
@@ -53,7 +47,7 @@ class ConnaissancesLinguistiques
 
     /**
      * @var \Azimuth\AzimuthBundle\Entity\NiveauLinguistique
-     * @ORM\ManyToOne(targetEntity="Azimuth\AzimuthBundle\Entity\Niveau")
+     * @ORM\ManyToOne(targetEntity="Azimuth\AzimuthBundle\Entity\NiveauLinguistique")
      *
      * @ORM\JoinColumn(nullable=false)
      */
@@ -102,29 +96,6 @@ class ConnaissancesLinguistiques
         return $this->langueNom;
     }
 
-    /**
-     * Set langueNiveau
-     *
-     * @param string $langueNiveau
-     *
-     * @return ConnaissancesLinguistiques
-     */
-    public function setLangueNiveau($langueNiveau)
-    {
-        $this->langueNiveau = $langueNiveau;
-
-        return $this;
-    }
-
-    /**
-     * Get langueNiveau
-     *
-     * @return string
-     */
-    public function getLangueNiveau()
-    {
-        return $this->langueNiveau;
-    }
 
     /**
      * @return Cv
@@ -143,4 +114,76 @@ class ConnaissancesLinguistiques
     }
 
 
+
+    /**
+     * Set langueNiveauExpresionEcrite
+     *
+     * @param \Azimuth\AzimuthBundle\Entity\NiveauLinguistique $langueNiveauExpresionEcrite
+     *
+     * @return ConnaissancesLinguistiques
+     */
+    public function setLangueNiveauExpresionEcrite(\Azimuth\AzimuthBundle\Entity\NiveauLinguistique $langueNiveauExpresionEcrite)
+    {
+        $this->langueNiveauExpresionEcrite = $langueNiveauExpresionEcrite;
+
+        return $this;
+    }
+
+    /**
+     * Get langueNiveauExpresionEcrite
+     *
+     * @return \Azimuth\AzimuthBundle\Entity\NiveauLinguistique
+     */
+    public function getLangueNiveauExpresionEcrite()
+    {
+        return $this->langueNiveauExpresionEcrite;
+    }
+
+    /**
+     * Set langueNiveauComprehensionEcrite
+     *
+     * @param \Azimuth\AzimuthBundle\Entity\NiveauLinguistique $langueNiveauComprehensionEcrite
+     *
+     * @return ConnaissancesLinguistiques
+     */
+    public function setLangueNiveauComprehensionEcrite(\Azimuth\AzimuthBundle\Entity\NiveauLinguistique $langueNiveauComprehensionEcrite)
+    {
+        $this->langueNiveauComprehensionEcrite = $langueNiveauComprehensionEcrite;
+
+        return $this;
+    }
+
+    /**
+     * Get langueNiveauComprehensionEcrite
+     *
+     * @return \Azimuth\AzimuthBundle\Entity\NiveauLinguistique
+     */
+    public function getLangueNiveauComprehensionEcrite()
+    {
+        return $this->langueNiveauComprehensionEcrite;
+    }
+
+    /**
+     * Set langueNiveauCompetenceOrale
+     *
+     * @param \Azimuth\AzimuthBundle\Entity\NiveauLinguistique $langueNiveauCompetenceOrale
+     *
+     * @return ConnaissancesLinguistiques
+     */
+    public function setLangueNiveauCompetenceOrale(\Azimuth\AzimuthBundle\Entity\NiveauLinguistique $langueNiveauCompetenceOrale)
+    {
+        $this->langueNiveauCompetenceOrale = $langueNiveauCompetenceOrale;
+
+        return $this;
+    }
+
+    /**
+     * Get langueNiveauCompetenceOrale
+     *
+     * @return \Azimuth\AzimuthBundle\Entity\NiveauLinguistique
+     */
+    public function getLangueNiveauCompetenceOrale()
+    {
+        return $this->langueNiveauCompetenceOrale;
+    }
 }

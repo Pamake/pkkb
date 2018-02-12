@@ -20,7 +20,7 @@ class CandidatFixtures extends Fixture implements DependentFixtureInterface
     				$candidat->setCandidatNom('LAPOINTE');
     				$candidat->setCandidatEmail('sophie.lapointe@gmail.com');
     				$candidat->setLangue($this->getReference('langueEN'));
-   					$candidat->setCandidatCreateDate(new \DateTime('now'));
+   					//$candidat->setCandidatCreateDate(new \DateTime('now'));
     				$candidat->setCandidatActive(1);
     				$candidat->setCandidatLastUpdate(new \DateTime('now'));
     				$candidat->setCandidatCoteDeSecurite(4);
@@ -43,7 +43,7 @@ class CandidatFixtures extends Fixture implements DependentFixtureInterface
     				$candidat1->setCandidatNom('WHITE');
     				$candidat1->setCandidatEmail('BETTY.WHITE@sakilacustomer.org');
     				$candidat1->setLangue($this->getReference('langueFR'));
-   					$candidat1->setCandidatCreateDate(new \DateTime('now'));
+   					//$candidat1->setCandidatCreateDate(new \DateTime('now'));
     				$candidat1->setCandidatActive(1);
     				$candidat1->setCandidatLastUpdate(new \DateTime('now'));
     				$candidat1->setCandidatCoteDeSecurite(4);
@@ -65,7 +65,7 @@ class CandidatFixtures extends Fixture implements DependentFixtureInterface
     				$candidat2->setCandidatNom('THOMAS');
     				$candidat2->setCandidatEmail('NANCY.THOMAS@sakilacustomer.org');
     				$candidat2->setLangue($this->getReference('langueES'));
-   					$candidat2->setCandidatCreateDate(new \DateTime('now'));
+   					//$candidat2->setCandidatCreateDate(new \DateTime('now'));
     				$candidat2->setCandidatActive(1);
     				$candidat2->setCandidatLastUpdate(new \DateTime('now'));
     				$candidat2->setCandidatCoteDeSecurite(4);
@@ -88,7 +88,7 @@ class CandidatFixtures extends Fixture implements DependentFixtureInterface
     				$candidat3->setCandidatNom('DAVIS');
     				$candidat3->setCandidatEmail('JENNIFER.DAVIS@sakilacustomer.org');
     				$candidat3->setLangue($this->getReference('langueEN'));
-   					$candidat3->setCandidatCreateDate(new \DateTime('now'));
+   					//$candidat3->setCandidatCreateDate(new \DateTime('now'));
     				$candidat3->setCandidatActive(1);
     				$candidat3->setCandidatLastUpdate(new \DateTime('now'));
     				$candidat3->setCandidatCoteDeSecurite(4);
@@ -111,7 +111,7 @@ class CandidatFixtures extends Fixture implements DependentFixtureInterface
     				$candidat4->setCandidatNom('WILLIAMS');
     				$candidat4->setCandidatEmail('LINDA.WILLIAMS@gmail.com');
     				$candidat4->setLangue($this->getReference('langueALL'));
-   					$candidat4->setCandidatCreateDate(new \DateTime('now'));
+   					//$candidat4->setCandidatCreateDate(new \DateTime('now'));
     				$candidat4->setCandidatActive(1);
     				$candidat4->setCandidatLastUpdate(new \DateTime('now'));
     				$candidat4->setCandidatCoteDeSecurite(4);
@@ -134,7 +134,7 @@ class CandidatFixtures extends Fixture implements DependentFixtureInterface
     				$candidat5->setCandidatNom('JOHNSON');
     				$candidat5->setCandidatEmail('PATRICIA.JOHNSON@sakilacustomer.org');
     				$candidat5->setLangue($this->getReference('langueFR'));
-   					$candidat5->setCandidatCreateDate(new \DateTime('now'));
+   					//$candidat5->setCandidatCreateDate(new \DateTime('now'));
     				$candidat5->setCandidatActive(1);
     				$candidat5->setCandidatLastUpdate(new \DateTime('now'));
     				$candidat5->setCandidatCoteDeSecurite(4);
